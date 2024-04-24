@@ -67,5 +67,5 @@ That's it! Now you're set up to request your first certificate :-)
 Please start out by configuring your environment in `testdata/transip/config.json`. You can then run the test suite with:
 
 ```bash
-TEST_ZONE_NAME=example.com go test . 
+TEST_ZONE_NAME=example.com go test .
 ```
