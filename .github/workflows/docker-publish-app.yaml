@@ -10,6 +10,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    concurrency:
+      cancel-in-progress: true
     permissions:
       contents: read
       packages: write
@@ -42,7 +44,7 @@ jobs:
             type=match,pattern=v(.*),group=1
             # set latest tag for default branch
             type=raw,value=latest,enable={{ is_default_branch }}
-      - name: Build Docker image (non master branch)
+      - name: Build Docker image (non master/dev branch)
         id: build-non-master
         if: github.ref != 'refs/heads/master' || 'refs/heads/dev' 
         uses: docker/build-push-action@v5
