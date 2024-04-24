@@ -5,7 +5,7 @@ This is an implementation of a Cert-Manager webhook for implementing DNS01 acme 
 ## FORK NOTES
 
 This fork has an updated Docker image based on a newer version Alpine linux. In addition the image has been compiled for
-both amd64 and arm64 instead of only the former. The tag is `ghcr.io/tomwiggers/cert-manager-webhook-transip:latest`, or
+both amd64 and arm64 instead of only the former. The tag is `ghcr.io/marck/cert-manager-webhook-transip:latest`, or
 see "Packages" on the right side.
 
 ### Installation
@@ -13,14 +13,14 @@ see "Packages" on the right side.
 You can use Helm to deploy the webhook:
 
 ```shell script
-$ git clone ...
-$ helm install cert-manager-webhook-transip --namespace=cert-manager ./deploy/transip-webhook
+git clone ...
+helm install cert-manager-webhook-transip --namespace=cert-manager ./deploy/transip-webhook
 ```
 
 Alternatively, you can use kubectl to deploy:
 
 ```shell script
-$ kubectl -n cert-manager apply -f https://raw.githubusercontent.com/robbietjuh/cert-manager-webhook-transip/master/deploy/recommended.yaml
+kubectl -n cert-manager apply -f https://raw.githubusercontent.com/Marck/k8s-cert-manager-webhook-transip/master/deploy/recommended.yaml
 ```
 
 Both methods will simply deploy the webhook container into your Kubernetes environment. After deployment, you'll have to configure the webhook to interface with your TransIP account.
@@ -37,7 +37,7 @@ kubectl -n cert-manager create secret generic transip-credentials --from-file=pr
 After saving your private key as a secret to the cluster, you'll have to configure the Issuer object. You can use the following as a template:
 
 ```yaml
-apiVersion: cert-manager.io/v1alpha2
+apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: le-staging
@@ -67,5 +67,5 @@ That's it! Now you're set up to request your first certificate :-)
 Please start out by configuring your environment in `testdata/transip/config.json`. You can then run the test suite with:
 
 ```bash
-$ TEST_ZONE_NAME=example.com go test .
+TEST_ZONE_NAME=example.com go test .
 ```
