@@ -8,7 +8,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: marck/cert-manager-webhook-transip
 jobs:
-  lint-test:
+  lint:
     runs-on: ubuntu-latest
     concurrency:
       group: helm-${{ github.ref }}
