@@ -1,6 +1,6 @@
 # TransIP Cert-Manager webhook
 
-[![Builds](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/helm-lint-docker-publish.yaml/badge.svg)](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/helm-lint-docker-publish.yaml)
+[![Builds](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/lint-publish.yaml/badge.svg)](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/lint-publish.yaml)
 
 This is an implementation of a Cert-Manager webhook for implementing DNS01 acme verification with TransIP as a DNS provider.
 
