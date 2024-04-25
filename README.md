@@ -2,13 +2,14 @@
 
 [![Builds](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/lint-publish.yaml/badge.svg)](https://github.com/Marck/k8s-cert-manager-webhook-transip/actions/workflows/lint-publish.yaml)
 
+> Based off [cert-manager webhook-example](https://github.com/cert-manager/webhook-example/tree/master)
+
 This is an implementation of a Cert-Manager webhook for implementing DNS01 acme verification with TransIP as a DNS provider.
 
-## FORK NOTES
+## Fork notes
 
 This fork has an updated Docker image based on a newer version Alpine linux. In addition the image has been compiled for
-both amd64 and arm64 instead of only the former. The tag is `ghcr.io/marck/cert-manager-webhook-transip:latest`, or
-see "Packages" on the right side.
+both amd64 and arm64 instead of only the former. The tag is `ghcr.io/marck/cert-manager-webhook-transip:latest`, or see "Packages" on the right side.
 
 ### Installation
 
@@ -66,7 +67,7 @@ That's it! Now you're set up to request your first certificate :-)
 
 ### Running the test suite
 
-Please start out by configuring your environment in `testdata/transip/config.json`. You can then run the test suite with:
+Please start out by configuring your environment in `testdata/transip/config.json` (gitignored). You can then run the test suite with:
 
 ```bash
 TEST_ZONE_NAME=example.com go test .
