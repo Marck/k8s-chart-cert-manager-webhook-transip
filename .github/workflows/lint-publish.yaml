@@ -1,5 +1,5 @@
 ---
-name: Build container image
+name: Lint and build container image
 on:
   push:
     branches:
