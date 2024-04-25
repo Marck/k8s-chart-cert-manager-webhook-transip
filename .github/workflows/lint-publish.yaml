@@ -77,9 +77,9 @@ jobs:
             type=match,pattern=v(.*),group=1
             # set latest tag for default branch
             type=raw,value=latest,enable={{ is_default_branch }}
-      - name: Build Docker image (non master/dev branch)
-        id: build-non-master
-        if: github.ref != 'refs/heads/master' && 'refs/heads/dev' 
+      - name: Build Docker image (non main/dev branch)
+        id: build-non-main-dev
+        if: github.ref != 'refs/heads/main' && 'refs/heads/dev' 
         uses: docker/build-push-action@v5
         with:
           push: false
@@ -91,7 +91,7 @@ jobs:
           file: Dockerfile
       - name: Build and push Docker image
         id: build-and-push
-        if: github.ref == 'refs/heads/master' || 'refs/heads/dev' 
+        if: github.ref == 'refs/heads/main' || 'refs/heads/dev' 
         uses: docker/build-push-action@v5
         with:
           push: ${{ github.event_name != 'pull_request' }}
