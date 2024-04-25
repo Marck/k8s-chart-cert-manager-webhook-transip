@@ -207,7 +207,7 @@ metadata:
     app: transip-webhook
 spec:
   secretName: transip-webhook-ca
-  duration: 43800h # 5y
+  duration: 43800h0m0s # 5y
   issuerRef:
     name: transip-webhook-selfsign
   commonName: "ca.transip-webhook.cert-manager"
@@ -223,7 +223,7 @@ metadata:
     app: transip-webhook
 spec:
   secretName: transip-webhook-tls
-  duration: 8760h # 1y
+  duration: 8760h0m0s # 1y
   issuerRef:
     name: transip-webhook-ca
   dnsNames:
