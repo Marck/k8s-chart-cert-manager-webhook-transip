@@ -155,7 +155,7 @@ func (c *transipDNSProviderSolver) CleanUp(ch *v1alpha1.ChallengeRequest) error 
 		return err
 	}
 
-	fmt.Printf("cleaning up record for %s (%s)", ch.ResolvedFQDN, domainName)
+	fmt.Printf("cleaning up record for %s (%s) ", ch.ResolvedFQDN, domainName)
 
 	domainRepo := domain.Repository{Client: *client}
 	dnsEntries, err := domainRepo.GetDNSEntries(domainName)
