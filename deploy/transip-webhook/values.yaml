@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/marck/cert-manager-webhook-transip
   tag: latest
   privateRegistrySecretName: ""
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
