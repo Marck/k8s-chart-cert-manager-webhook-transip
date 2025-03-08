@@ -80,7 +80,7 @@ jobs:
       - name: Build Docker image (non main/dev branch)
         id: build-non-main-dev
         if: github.ref != 'refs/heads/main' && 'refs/heads/dev' 
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           push: false
           tags: ${{ steps.meta.outputs.tags }}
@@ -92,7 +92,7 @@ jobs:
       - name: Build and push Docker image
         id: build-and-push
         if: github.ref == 'refs/heads/main' || 'refs/heads/dev' 
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
