@@ -1,15 +1,15 @@
 module github.com/marck/cert-manager-webhook-transip
 
-go 1.23.0
+go 1.24.0
 
 toolchain go1.24.2
 
 require (
 	github.com/jetstack/cert-manager v0.16.1
 	github.com/transip/gotransip/v6 v6.26.0
-	k8s.io/api v0.32.4
+	k8s.io/api v0.33.0
 	k8s.io/apiextensions-apiserver v0.32.4
-	k8s.io/apimachinery v0.32.4
+	k8s.io/apimachinery v0.33.0
 	k8s.io/client-go v0.32.4
 )
 
@@ -306,8 +306,8 @@ require (
 	github.com/google/btree v1.0.1 // indirect
 	github.com/google/cel-go v0.22.0 // indirect
 	github.com/google/flatbuffers v23.5.26+incompatible // indirect
-	github.com/google/gnostic-models v0.6.8 // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/google/gnostic-models v0.6.9 // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/go-pkcs11 v0.2.1-0.20230907215043-c6f79328ddf9 // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
@@ -453,7 +453,7 @@ require (
 	github.com/prometheus/tsdb v0.7.1 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/rogpeppe/fastuuid v1.2.0 // indirect
-	github.com/rogpeppe/go-internal v1.12.0 // indirect
+	github.com/rogpeppe/go-internal v1.13.1 // indirect
 	github.com/russross/blackfriday v1.5.2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ruudk/golang-pdf417 v0.0.0-20201230142125-a7e3863a1245 // indirect
@@ -475,7 +475,7 @@ require (
 	github.com/spf13/viper v1.7.0 // indirect
 	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
-	github.com/stretchr/testify v1.9.0 // indirect
+	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/substrait-io/substrait-go v0.4.2 // indirect
 	github.com/tidwall/pretty v1.0.0 // indirect
@@ -520,20 +520,20 @@ require (
 	go.uber.org/goleak v1.3.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/crypto v0.28.0 // indirect
+	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
 	golang.org/x/image v0.0.0-20220302094943-723b81ca9867 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
 	golang.org/x/mobile v0.0.0-20190719004257-d2bd2a29d028 // indirect
 	golang.org/x/mod v0.21.0 // indirect
-	golang.org/x/net v0.30.0 // indirect
+	golang.org/x/net v0.38.0 // indirect
 	golang.org/x/oauth2 v0.23.0 // indirect
-	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.26.0 // indirect
+	golang.org/x/sync v0.12.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/telemetry v0.0.0-20240521205824-bda55230c457 // indirect
-	golang.org/x/term v0.25.0 // indirect
-	golang.org/x/text v0.19.0 // indirect
-	golang.org/x/time v0.7.0 // indirect
+	golang.org/x/term v0.30.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
+	golang.org/x/time v0.9.0 // indirect
 	golang.org/x/tools v0.26.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.0.1 // indirect
@@ -548,7 +548,7 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240826202546-f6391c0de4c7 // indirect
 	google.golang.org/grpc v1.65.0 // indirect
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.1.0 // indirect
-	google.golang.org/protobuf v1.35.1 // indirect
+	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6 // indirect
 	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
@@ -577,7 +577,7 @@ require (
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/kms v0.32.4 // indirect
 	k8s.io/kube-aggregator v0.18.5 // indirect
-	k8s.io/kube-openapi v0.0.0-20241105132330-32ad38e42d3f // indirect
+	k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff // indirect
 	k8s.io/kubectl v0.18.5 // indirect
 	k8s.io/metrics v0.18.5 // indirect
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738 // indirect
@@ -604,8 +604,9 @@ require (
 	sigs.k8s.io/controller-tools v0.2.9-0.20200414181213-645d44dca7c0 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/kustomize v2.0.3+incompatible // indirect
+	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v3 v3.0.0 // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.6.0 // indirect
 	sigs.k8s.io/testing_frameworks v0.1.2 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 	software.sslmate.com/src/go-pkcs12 v0.0.0-20180114231543-2291e8f0f237 // indirect
