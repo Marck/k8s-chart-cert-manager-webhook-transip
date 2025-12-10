@@ -8,9 +8,9 @@ require (
 	github.com/jetstack/cert-manager v0.16.1
 	github.com/transip/gotransip/v6 v6.26.1
 	k8s.io/api v0.34.3
-	k8s.io/apiextensions-apiserver v0.34.2
+	k8s.io/apiextensions-apiserver v0.34.3
 	k8s.io/apimachinery v0.34.3
-	k8s.io/client-go v0.34.2
+	k8s.io/client-go v0.34.3
 )
 
 require (
@@ -571,15 +571,15 @@ require (
 	gotest.tools v2.2.0+incompatible // indirect
 	gotest.tools/v3 v3.5.1 // indirect
 	honnef.co/go/tools v0.1.3 // indirect
-	k8s.io/apiserver v0.34.2 // indirect
+	k8s.io/apiserver v0.34.3 // indirect
 	k8s.io/cli-runtime v0.18.5 // indirect
-	k8s.io/code-generator v0.34.2 // indirect
-	k8s.io/component-base v0.34.2 // indirect
+	k8s.io/code-generator v0.34.3 // indirect
+	k8s.io/component-base v0.34.3 // indirect
 	k8s.io/gengo v0.0.0-20200114144118-36b2048a9120 // indirect
 	k8s.io/gengo/v2 v2.0.0-20250604051438-85fd79dbfd9f // indirect
 	k8s.io/klog v1.0.0 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
-	k8s.io/kms v0.34.2 // indirect
+	k8s.io/kms v0.34.3 // indirect
 	k8s.io/kube-aggregator v0.18.5 // indirect
 	k8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect
 	k8s.io/kubectl v0.18.5 // indirect
