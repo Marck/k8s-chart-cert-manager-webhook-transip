@@ -8,9 +8,9 @@ require (
 	github.com/jetstack/cert-manager v0.16.1
 	github.com/transip/gotransip/v6 v6.26.2
 	k8s.io/api v0.35.4
-	k8s.io/apiextensions-apiserver v0.35.3
+	k8s.io/apiextensions-apiserver v0.35.4
 	k8s.io/apimachinery v0.35.4
-	k8s.io/client-go v0.35.3
+	k8s.io/client-go v0.35.4
 )
 
 require (
@@ -508,15 +508,15 @@ require (
 	go.etcd.io/gofail v0.2.0 // indirect
 	go.mongodb.org/mongo-driver v1.1.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
+	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.60.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.61.0 // indirect
-	go.opentelemetry.io/otel v1.36.0 // indirect
+	go.opentelemetry.io/otel v1.41.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.34.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.34.0 // indirect
-	go.opentelemetry.io/otel/metric v1.36.0 // indirect
+	go.opentelemetry.io/otel/metric v1.41.0 // indirect
 	go.opentelemetry.io/otel/sdk v1.36.0 // indirect
-	go.opentelemetry.io/otel/trace v1.36.0 // indirect
+	go.opentelemetry.io/otel/trace v1.41.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.5.0 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/goleak v1.3.0 // indirect
@@ -571,15 +571,15 @@ require (
 	gotest.tools v2.2.0+incompatible // indirect
 	gotest.tools/v3 v3.5.1 // indirect
 	honnef.co/go/tools v0.1.3 // indirect
-	k8s.io/apiserver v0.35.3 // indirect
+	k8s.io/apiserver v0.35.4 // indirect
 	k8s.io/cli-runtime v0.18.5 // indirect
-	k8s.io/code-generator v0.35.3 // indirect
-	k8s.io/component-base v0.35.3 // indirect
+	k8s.io/code-generator v0.35.4 // indirect
+	k8s.io/component-base v0.35.4 // indirect
 	k8s.io/gengo v0.0.0-20200114144118-36b2048a9120 // indirect
 	k8s.io/gengo/v2 v2.0.0-20250922181213-ec3ebc5fd46b // indirect
 	k8s.io/klog v1.0.0 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
-	k8s.io/kms v0.35.3 // indirect
+	k8s.io/kms v0.35.4 // indirect
 	k8s.io/kube-aggregator v0.18.5 // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	k8s.io/kubectl v0.18.5 // indirect
