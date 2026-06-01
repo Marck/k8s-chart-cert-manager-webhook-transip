@@ -5,6 +5,7 @@ on:
     branches:
       - '*'
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   REGISTRY: ghcr.io
   IMAGE_NAME: marck/cert-manager-webhook-transip
 jobs:
@@ -21,6 +22,12 @@ jobs:
       - name: Set up Helm
         uses: azure/setup-helm@v5
       - uses: actions/setup-python@v6
+      - name: Helm lint --strict
+        run: helm lint --strict deploy/transip-webhook
+
+      - name: Helm template dry-run
+        run: helm template release deploy/transip-webhook > /dev/null
+
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.8.0
       - name: Run chart-testing (list-changed)
@@ -79,7 +86,7 @@ jobs:
             type=raw,value=latest,enable={{ is_default_branch }}
       - name: Build Docker image (non main/dev branch)
         id: build-non-main-dev
-        if: github.ref != 'refs/heads/main' && 'refs/heads/dev' 
+        if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/dev'
         uses: docker/build-push-action@v7
         with:
           push: false
@@ -91,7 +98,7 @@ jobs:
           file: Dockerfile
       - name: Build and push Docker image
         id: build-and-push
-        if: github.ref == 'refs/heads/main' || 'refs/heads/dev' 
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev'
         uses: docker/build-push-action@v7
         with:
           push: ${{ github.event_name != 'pull_request' }}
