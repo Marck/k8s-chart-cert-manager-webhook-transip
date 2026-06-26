@@ -165,6 +165,8 @@ github.com/tmc/grpc-websocket-proxy v0.0.0-20220101234140-673ab2c3ae75 h1:6fotK7
 github.com/tmc/grpc-websocket-proxy v0.0.0-20220101234140-673ab2c3ae75/go.mod h1:KO6IkyS8Y3j8OdNO85qEYBsRPuteD+YciPomcXdrMnk=
 github.com/transip/gotransip/v6 v6.27.1 h1:J8DfGAxnFZxNYdIRj59D6uFm0FPOkx9tF1aCkGgXeR8=
 github.com/transip/gotransip/v6 v6.27.1/go.mod h1:x0/RWGRK/zob817O3tfO2xhFoP1vu8YOHORx6Jpk80s=
+github.com/transip/gotransip/v6 v6.27.2 h1:TLa/9d2klZ9kNN/tQrhMdcjA9JnsMbACpTO/8qRpHmg=
+github.com/transip/gotransip/v6 v6.27.2/go.mod h1:x0/RWGRK/zob817O3tfO2xhFoP1vu8YOHORx6Jpk80s=
 github.com/x448/float16 v0.8.4 h1:qLwI1I70+NjRFUR3zs1JPUCgaCXSh3SW62uAKT1mSBM=
 github.com/x448/float16 v0.8.4/go.mod h1:14CWIYCyZA/cWjXOioeEpHeN/83MdbZDRQHoFcYsOfg=
 github.com/xiang90/probing v0.0.0-20221125231312-a49e3df8f510 h1:S2dVYn90KE98chqDkyE9Z4N61UnQd+KOfgp5Iu53llk=
