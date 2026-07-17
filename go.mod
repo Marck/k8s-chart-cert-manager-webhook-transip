@@ -2,7 +2,7 @@ module github.com/marck/cert-manager-webhook-transip
 
 go 1.26.0
 
-toolchain go1.26.4
+toolchain go1.26.5
 
 require (
 	github.com/cert-manager/cert-manager v1.20.3
