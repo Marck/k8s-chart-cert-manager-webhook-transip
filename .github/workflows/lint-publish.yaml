@@ -16,7 +16,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Set up Helm
@@ -60,7 +60,7 @@ jobs:
       #id-token: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       -  name: Set up QEMU
          uses: docker/setup-qemu-action@v4
       - name: Setup Docker Buildx
