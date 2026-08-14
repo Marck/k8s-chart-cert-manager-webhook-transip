@@ -6,7 +6,7 @@ toolchain go1.26.5
 
 require (
 	github.com/cert-manager/cert-manager v1.21.1
-	github.com/transip/gotransip/v6 v6.27.2
+	github.com/transip/gotransip/v6 v6.27.3
 	k8s.io/api v0.36.3
 	k8s.io/apiextensions-apiserver v0.36.3
 	k8s.io/apimachinery v0.36.3
