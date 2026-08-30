@@ -8,7 +8,7 @@ require (
 	github.com/cert-manager/cert-manager v1.21.1
 	github.com/transip/gotransip/v6 v6.28.0
 	k8s.io/api v0.36.4
-	k8s.io/apiextensions-apiserver v0.36.3
+	k8s.io/apiextensions-apiserver v0.36.4
 	k8s.io/apimachinery v0.36.4
 	k8s.io/client-go v0.36.4
 )
@@ -113,10 +113,10 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiserver v0.36.3 // indirect
-	k8s.io/component-base v0.36.3 // indirect
+	k8s.io/apiserver v0.36.4 // indirect
+	k8s.io/component-base v0.36.4 // indirect
 	k8s.io/klog/v2 v2.140.0 // indirect
-	k8s.io/kms v0.36.3 // indirect
+	k8s.io/kms v0.36.4 // indirect
 	k8s.io/kube-openapi v0.0.0-20260501160325-927ab1f70cd6 // indirect
 	k8s.io/streaming v0.36.4 // indirect
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd // indirect
